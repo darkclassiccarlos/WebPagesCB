@@ -1,18 +1,18 @@
 // App.js
 import React from 'react';
-import './App.css';
+import './styles.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import Content from './components/Content';
+import FeatureSection from './components/FeatureSection';
+import Footer  from './components/Footer';
 
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+      <div className="App">
+          <Header />
+          <FeatureSection />
+          <Footer />
+      </div>
   );
 }
 

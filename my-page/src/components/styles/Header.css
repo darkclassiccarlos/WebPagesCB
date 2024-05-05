@@ -1,24 +1,42 @@
 /* header.css */
 
-/* Estilo del AppBar */
-.appBar {
-  background-color: #3333; /* Fondo oscuro */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-/* Estilo del Typography */
-.title {
-  color: #fff; /* Texto blanco */
-  font-size: 24px;
-  text-transform: uppercase;
-  animation: fadeIn 1s ease; /* Animación de desvanecimiento */
+.HeaderLeft {
+  display: flex;
+  align-items: center;
 }
 
-/* Animación de desvanecimiento */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.HeaderRight {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 50px; /* Ancho deseado del logo */
+  height: auto; /* Autoajustar la altura para mantener la proporción */
+}
+
+.HeaderTitle {
+  margin: 0;
+  font-size: 1.5rem; /* Ajusta el tamaño del título según tu diseño */
+  color: #FCF3CF; /* Cambia el color del texto del slogan a naranja */
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px; /* Espacio entre los botones */
+}
+
+.btn:hover {
+  background-color: #555; /* Cambio de color al pasar el mouse */
 }

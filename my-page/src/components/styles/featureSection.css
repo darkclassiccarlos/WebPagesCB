@@ -1,0 +1,45 @@
+/* FeatureSection.css */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    flex: 1;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    text-align: center; /* Centra el contenido */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    background-color: rgba(108, 91, 123, 0.5);
+}
+
+.card:hover {
+    background-color: rgba(162, 155, 254, 0.5);
+}
+
+/* Estilos para los iconos SVG */
+.icon {
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Estilos específicos para cada icono */
+.svg-support {
+    background-image: url('http://www.w3.org/2000/svg');
+}
+
+.svg-sales {
+    background-image: url('http://www.w3.org/2000/svg');
+}
+
+.svg-products {
+    background-image: url('http://www.w3.org/2000/svg');
+}

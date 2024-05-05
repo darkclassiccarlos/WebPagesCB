@@ -1,0 +1,21 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Color de fondo */
+  background-image: url('./images/background.jpeg');
+  background-size: cover; /* Cubrir todo el área del cuerpo */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-attachment: fixed; /* Fijar el fondo para que no se mueva al hacer scroll */
+}
+
+/* Estilo normal del fondo */
+body {
+  /* Estilos del fondo */
+}
+
+/* Estilo del fondo al hacer hover */
+body:hover {
+  background-color: #d9d9d9; /* Cambiar el color de fondo al hacer hover */
+}
