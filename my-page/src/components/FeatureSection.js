@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './styles/featureSection.css'; // Importamos los estilos CSS
-//import IconoSVG from './IconoSVG.svg'; // Importamos el icono SVG
+
 
 Modal.setAppElement('#root');
 
 const FeatureSection = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedFeature, setSelectedFeature] = useState('');
+    const [modalContent, setModalContent] = useState('');
 
     const openModal = (feature) => {
         setSelectedFeature(feature);

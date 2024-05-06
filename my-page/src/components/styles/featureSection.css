@@ -31,15 +31,14 @@
     background-repeat: no-repeat;
 }
 
-/* Estilos específicos para cada icono */
-.svg-support {
-    background-image: url('http://www.w3.org/2000/svg');
-}
 
-.svg-sales {
-    background-image: url('http://www.w3.org/2000/svg');
-}
-
-.svg-products {
-    background-image: url('http://www.w3.org/2000/svg');
+/* Media query para hacer las tarjetas responsivas */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Cambia la dirección de flexión a columna en dispositivos con una pantalla de 768px o menos */
+    }
+    .card {
+        max-width: 100%; /* Ajusta el ancho máximo de la tarjeta al 100% en dispositivos con una pantalla de 768px o menos */
+        margin-bottom: 1rem; /* Agrega un espacio entre tarjetas en dispositivos móviles */
+    }
 }

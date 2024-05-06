@@ -40,3 +40,16 @@
 .btn:hover {
   background-color: #555; /* Cambio de color al pasar el mouse */
 }
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .HeaderLeft,
+  .HeaderRight {
+    margin-bottom: 0.5rem;
+  }
+}

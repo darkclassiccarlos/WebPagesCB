@@ -1,0 +1,25 @@
+/* footer.css */
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+  padding: 1rem 0; /* Espaciado interno */
+  color: #fff; /* Color del texto */
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center; /* Centrar los iconos horizontalmente */
+}
+
+.SocialIcon {
+  font-size: 1.5rem; /* Tamaño de los iconos */
+  margin: 0 5px; /* Espaciado entre los iconos */
+}
+
+.SocialIcon:hover {
+  opacity: 0.8; /* Opacidad al pasar el mouse */
+} 
