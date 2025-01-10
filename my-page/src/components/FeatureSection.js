@@ -8,12 +8,12 @@ Modal.setAppElement('#root');
 const FeatureSection = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedFeature, setSelectedFeature] = useState('');
-    const [modalContent, setModalContent] = useState('');
+    // const [modalContent, setModalContent] = useState('');
 
-    useEffect(() => {
-        // Hacer la solicitud a la API cuando se monte el componente
-        fetchData(selectedFeature);
-    }, [selectedFeature]);
+    // useEffect(() => {
+    //     // Hacer la solicitud a la API cuando se monte el componente
+    //     fetchData(selectedFeature);
+    // }, [selectedFeature]);
 
     const openModal = (feature) => {
         setSelectedFeature(feature);
@@ -24,15 +24,15 @@ const FeatureSection = () => {
         setModalIsOpen(false);
     };
 
-    const fetchData = async (feature) => {
-        try {
-            const response = await fetch(`URL_DE_TU_API_AQUI/${feature}`);
-            const data = await response.json();
-            setModalContent(data); // Establece el contenido del modal con los datos de la API
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    };
+    // const fetchData = async (feature) => {
+    //     try {
+    //         const response = await fetch(`URL_DE_TU_API_AQUI/${feature}`);
+    //         const data = await response.json();
+    //         setModalContent(data); // Establece el contenido del modal con los datos de la API
+    //     } catch (error) {
+    //         console.error('Error fetching data:', error);
+    //     }
+    // };
 
     return (
         <section className="py-12 bg-white sm:py-16 lg:py-20">
